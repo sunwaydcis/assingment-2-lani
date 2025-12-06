@@ -1,4 +1,10 @@
 import scalafx.application.JFXApp3
+import scalafx.geometry.{Insets, Pos}
+import scalafx.scene.Scene
+import scalafx.scene.control.{Label, ScrollPane}
+import scalafx.scene.layout.{VBox, HBox}
+import scalafx.scene.paint.Color
+import scalafx.scene.text.{Font, FontWeight}
 
 import scala.io.Source
 import scala.util.Try
@@ -220,8 +226,6 @@ object MyApp extends JFXApp3:
           scored.filter { case (_, s) => math.abs(s - topScore) < eps }.map(_._1)
 
   override def start(): Unit =
-    stage = new JFXApp3.PrimaryStage {}   // required for JFXApp
-
     println("=== Hotel Booking Analysis ===")
 
     val bookings = loadBookings("Hotel_Dataset.csv")
@@ -248,8 +252,80 @@ object MyApp extends JFXApp3:
       // Q3
       val profWinners = analytics.answerQ3()
       printWinnerWithTies("Q3: Most profitable hotel(s)", profWinners)
+
+      // Create GUI
+      createGUI(countries, cnt, econWinners, profWinners)
     else
       println("ERROR: No data loaded.")
+      // Show error in GUI too
+      stage = new JFXApp3.PrimaryStage {
+        title = "Hotel Booking Analysis - Error"
+        scene = new Scene {
+          root = new VBox {
+            padding = Insets(20)
+            children = Seq(
+              new Label("ERROR: No data loaded.") {
+                font = Font.font("Arial", FontWeight.Bold, 16)
+                textFill = Color.Red
+              }
+            )
+          }
+        }
+      }
+
+
+  // GUI as well, incase needed, question never specified but just in case
+  def createGUI(countries: List[String], count: Int, econWinners: List[String], profWinners: List[String]): Unit =
+    def formatResults(winners: List[String], countOpt: Option[Int] = None): String =
+      if winners.isEmpty then "(none)"
+      else
+        val first = s"${winners.head}${countOpt.map(c => s" ($c)").getOrElse("")}"
+        if winners.tail.nonEmpty then
+          (first :: winners.tail).mkString("\n")
+        else
+          first + " (no ties)"
+
+    def createSection(title: String, content: String): VBox =
+      new VBox {
+        spacing = 5
+        padding = Insets(10)
+        children = Seq(
+          new Label(title) {
+            font = Font.font("Arial", FontWeight.Bold, 14)
+            textFill = Color.DarkBlue
+          },
+          new Label(content) {
+            wrapText = true
+            font = Font.font("Arial", 12)
+            textFill = Color.Black
+          }
+        )
+      }
+
+    val q1Content = formatResults(countries, Some(count))
+    val q2Content = formatResults(econWinners)
+    val q3Content = formatResults(profWinners)
+
+    stage = new JFXApp3.PrimaryStage {
+      title = "Hotel Booking Analysis"
+      scene = new Scene(800, 600) {
+        root = new ScrollPane {
+          content = new VBox {
+            spacing = 15
+            padding = Insets(20)
+            children = Seq(
+              new Label("=== Hotel Booking Analysis ===") {
+                font = Font.font("Arial", FontWeight.Bold, 18)
+                textFill = Color.DarkBlue
+              },
+              createSection("Q1: Country(ies) with most bookings", q1Content),
+              createSection("Q2: Most economical hotel(s)", q2Content),
+              createSection("Q3: Most profitable hotel(s)", q3Content)
+            )
+          }
+        }
+      }
+    }
 
 
 end MyApp

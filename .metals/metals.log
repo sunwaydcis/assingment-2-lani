@@ -1,0 +1,302 @@
+2025.12.06 23:04:19 INFO  Started: Metals version 1.6.4 in folders 'C:\02 PROJECTS\assingment-2-lani' for client Visual Studio Code 1.106.3.
+2025.12.06 23:04:19 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.12.06 23:04:20 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Dec 06, 2025 11:04:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2025.12.06 23:04:22 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Dec 06, 2025 11:04:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Dec 06, 2025 11:04:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+Dec 06, 2025 11:04:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6
+2025.12.06 23:04:22 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:04:23 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:04:26 INFO  running 'C:\Program Files\Java\jdk-21\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\l4n1skyy\AppData\Local\Temp\metals3813496443404219447\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2025.12.06 23:04:28 INFO  sbt thinks that server is already booting because of this exception:
+2025.12.06 23:04:28 ERROR sbt.internal.ServerAlreadyBootingException: java.io.IOException: Could not create lock for \\.\pipe\sbt-load1919704447109306216_lock, error 5
+2025.12.06 23:04:28 ERROR 	at sbt.internal.BootServerSocket.newSocket(BootServerSocket.java:357)
+2025.12.06 23:04:28 ERROR 	at sbt.internal.BootServerSocket.<init>(BootServerSocket.java:296)
+2025.12.06 23:04:28 ERROR 	at sbt.xMain$.getSocketOrExit(Main.scala:152)
+2025.12.06 23:04:28 ERROR 	at sbt.xMain$.bootServerSocket$lzycompute$1(Main.scala:78)
+2025.12.06 23:04:28 ERROR 	at sbt.xMain$.bootServerSocket$1(Main.scala:78)
+2025.12.06 23:04:28 ERROR 	at sbt.xMain$.withStreams$1(Main.scala:86)
+2025.12.06 23:04:28 ERROR 	at sbt.xMain$.run(Main.scala:123)
+2025.12.06 23:04:28 ERROR 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+2025.12.06 23:04:28 ERROR 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+2025.12.06 23:04:28 ERROR 	at sbt.internal.XMainConfiguration.run(XMainConfiguration.java:59)
+2025.12.06 23:04:28 ERROR 	at sbt.xMain.run(Main.scala:47)
+2025.12.06 23:04:28 ERROR 	at xsbt.boot.Launch$.$anonfun$run$1(Launch.scala:149)
+2025.12.06 23:04:28 ERROR 	at xsbt.boot.Launch$.withContextLoader(Launch.scala:176)
+2025.12.06 23:04:28 ERROR 	at xsbt.boot.Launch$.run(Launch.scala:149)
+2025.12.06 23:04:28 ERROR 	at xsbt.boot.Launch$.$anonfun$apply$1(Launch.scala:44)
+2025.12.06 23:04:28 ERROR 	at xsbt.boot.Launch$.launch(Launch.scala:159)
+2025.12.06 23:04:28 ERROR 	at xsbt.boot.Launch$.apply(Launch.scala:44)
+2025.12.06 23:04:28 ERROR 	at xsbt.boot.Launch$.apply(Launch.scala:21)
+2025.12.06 23:04:28 ERROR 	at xsbt.boot.Boot$.runImpl(Boot.scala:78)
+2025.12.06 23:04:28 ERROR 	at xsbt.boot.Boot$.run(Boot.scala:73)
+2025.12.06 23:04:28 ERROR 	at xsbt.boot.Boot$.main(Boot.scala:21)
+2025.12.06 23:04:28 ERROR 	at xsbt.boot.Boot.main(Boot.scala)
+2025.12.06 23:04:28 ERROR Caused by: java.io.IOException: Could not create lock for \\.\pipe\sbt-load1919704447109306216_lock, error 5
+2025.12.06 23:04:28 ERROR 	at org.scalasbt.ipcsocket.Win32NamedPipeServerSocket.<init>(Win32NamedPipeServerSocket.java:129)
+2025.12.06 23:04:28 ERROR 	at org.scalasbt.ipcsocket.Win32NamedPipeServerSocket.<init>(Win32NamedPipeServerSocket.java:48)
+2025.12.06 23:04:28 ERROR 	at sbt.internal.BootServerSocket.newSocket(BootServerSocket.java:351)
+2025.12.06 23:04:28 ERROR 	... 21 more
+2025.12.06 23:04:28 INFO  time: ran 'sbt bloopInstall' in 1.28s
+2025.12.06 23:04:28 ERROR sbt command failed: C:\Program Files\Java\jdk-21\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\l4n1skyy\AppData\Local\Temp\metals3813496443404219447\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+2025.12.06 23:04:28 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:04:28 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala
+2025.12.06 23:04:31 INFO  time: code lens generation in 3.01s
+2025.12.06 23:04:31 INFO  time: code lens generation in 3.01s
+2025.12.06 23:04:31 INFO  time: code lens generation in 3.01s
+2025.12.06 23:04:33 INFO  Attempting to connect to the build server...
+2025.12.06 23:04:35 INFO  running C:\Program Files\Java\jdk-21\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\02 PROJECTS\assingment-2-lani\sbt-launch.jar --client shutdown
+2025.12.06 23:04:35 INFO  [info] entering *experimental* thin client - BEEP WHIRR
+2025.12.06 23:04:35 INFO  [info] sbt server is booting up
+2025.12.06 23:04:44 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:04:56 INFO  user cancelled Shutting down sbt server
+2025.12.06 23:04:56 INFO  Running BSP server List(C:\Program Files\Java\jdk-21/bin/java, -Xms100m, -Xmx100m, -classpath, C:/Users/l4n1skyy/AppData/Roaming/JetBrains/IntelliJIdea2025.2/plugins/Scala/launcher/sbt-launch.jar, -Dsbt.script=file://C:\Program%20Files%20(x86)\sbt\bin\sbt.bat, xsbt.boot.Boot, -bsp)
+2025.12.06 23:04:56 INFO  time: ran 'Shutting down sbt server' in 21s
+2025.12.06 23:04:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\02 PROJECTS\assingment-2-lani\.metals\bsp.trace.json or C:\Users\l4n1skyy\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.12.06 23:04:57 INFO  BSP server: [info] sbt server is booting up
+2025.12.06 23:05:39 INFO  Shutting down server
+2025.12.06 23:05:39 INFO  shutting down Metals
+2025.12.06 23:05:39 INFO  Exiting server
+2025.12.06 23:05:54 INFO  Started: Metals version 1.6.4 in folders 'C:\02 PROJECTS\assingment-2-lani' for client Visual Studio Code 1.106.3.
+2025.12.06 23:05:54 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.12.06 23:06:02 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:06:02 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala
+2025.12.06 23:06:06 INFO  time: code lens generation in 3.5s
+2025.12.06 23:06:06 INFO  time: code lens generation in 3.8s
+2025.12.06 23:07:23 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:07:36 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:09 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:09 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\build.sbt
+2025.12.06 23:08:10 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:10 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:10 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:10 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:11 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:12 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:12 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:14 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:14 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:15 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\build.sbt
+2025.12.06 23:08:16 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\build.sbt
+2025.12.06 23:08:17 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:17 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:18 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:18 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\build.sbt
+2025.12.06 23:08:25 INFO  skipping build import with status 'Dismissed'
+2025.12.06 23:08:39 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:39 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala
+2025.12.06 23:08:47 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:50 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:52 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:52 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:52 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:53 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:53 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:54 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala
+2025.12.06 23:08:54 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:55 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:55 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:55 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:08:55 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala
+2025.12.06 23:09:42 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:09:42 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:09:42 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:09:42 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:09:43 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:09:43 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:09:44 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:09:43 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Dec 06, 2025 11:09:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 107
+2025.12.06 23:09:43 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:09:44 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:09:45 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:09:45 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala
+2025.12.06 23:10:25 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:25 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:25 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:25 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:25 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:27 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala
+2025.12.06 23:10:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:10:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:02 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:02 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:02 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:02 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:02 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:02 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:03 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:03 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:03 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:03 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:05 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:05 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:05 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:05 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:06 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:06 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala
+2025.12.06 23:11:07 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\build.sbt
+2025.12.06 23:11:07 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:07 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:07 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:07 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:07 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:08 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:09 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:09 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\build.sbt
+2025.12.06 23:11:25 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\build.sbt
+2025.12.06 23:11:25 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:25 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:11:26 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\build.sbt
+2025.12.06 23:11:25 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:14:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:14:41 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:16:11 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:16:15 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:18:14 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:18:14 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:18:59 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:02 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:02 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala
+2025.12.06 23:19:02 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:02 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:02 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:03 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:03 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:05 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:09 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:16 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:17 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:17 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:18 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:19 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:19 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:19 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:19 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:20 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:21 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:21 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:21 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:20 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:22 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:22 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:22 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:22 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:23 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:23 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:23 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:23 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:23 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:23 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:23 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:23 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:23 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:23 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:23 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:24 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:24 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:24 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:24 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:24 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:24 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:24 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:24 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:24 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:24 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Dec 06, 2025 11:19:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 287
+2025.12.06 23:19:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:26 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:27 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:28 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:28 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:28 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:28 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:28 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:28 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:28 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:28 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:28 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:28 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:28 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:28 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:29 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:29 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:29 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:29 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:29 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:29 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:29 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:29 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:29 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:29 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:29 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:29 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:29 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:29 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:30 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:30 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:30 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:30 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:30 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:30 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:30 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:30 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:30 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:30 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:30 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:30 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:30 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:30 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:31 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:31 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:31 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:31 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:31 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:31 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala
+2025.12.06 23:19:32 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:32 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:32 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala
+2025.12.06 23:19:34 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:35 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:53 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 23:19:53 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
