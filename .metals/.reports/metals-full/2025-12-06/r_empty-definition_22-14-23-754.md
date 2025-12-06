@@ -1,3 +1,19 @@
+error id: file:///C:/02%20PROJECTS/assingment-2-lani/src/main/scala/myfirstscala.scala:`<none>`.
+file:///C:/02%20PROJECTS/assingment-2-lani/src/main/scala/myfirstscala.scala
+empty definition using pc, found symbol in pc: `<none>`.
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+	 -metrics/isEmpty.
+	 -metrics/isEmpty#
+	 -metrics/isEmpty().
+	 -scala/Predef.metrics.isEmpty.
+	 -scala/Predef.metrics.isEmpty#
+	 -scala/Predef.metrics.isEmpty().
+offset: 8197
+uri: file:///C:/02%20PROJECTS/assingment-2-lani/src/main/scala/myfirstscala.scala
+text:
+```scala
 import scalafx.application.JFXApp3
 
 import scala.io.Source
@@ -116,9 +132,8 @@ object MyApp extends JFXApp3:
       sumPricePerBookingPerson + o.sumPricePerBookingPerson
     )
 
-  // CORE: Q1, Q2, and Q3 calculations, as well as some shared calculations for faster computation
+  // Helper Function: Get core calculations shared across questions
   class HotelAnalytics(data: List[Booking]):
-
     // Map HotelAgg to HotelKey (Find totals for each hotel group)
     private val aggs: Map[HotelKey, HotelAgg] =
       data
@@ -134,7 +149,7 @@ object MyApp extends JFXApp3:
         )(_ + _)
 
     // Find average price, disocunt, profit and total people for that hotel group
-    // Calculations for each hotel group so no need compute again for each question
+    // Calculations for each hotel group — derived from `aggs` so we don't re-scan bookings
     private lazy val metrics: Map[HotelKey, (Double, Double, Double, Int)] =
       aggs.view.mapValues { agg =>
         val avgPricePerPerson = if agg.bookings == 0 then 0.0 else agg.sumPricePerBookingPerson / agg.bookings.toDouble
@@ -144,13 +159,18 @@ object MyApp extends JFXApp3:
         (avgPricePerPerson, avgDiscount, avgProfit, totalPeople)
       }.toMap
 
+    // Public question functions (each contains its specific computation) -----
     // Q1: returns list of top country(ies) and the count
     def answerQ1(): (List[String], Int) =
-      // map from destination country → booking count, map booking → 1, hence can sum those 1s by country to produce map
+      // Count bookings per destination country in a single pass, then pick the max.
+      // Steps:
+      // 1) `groupMapReduce` builds a Map[country -> count] by mapping each booking to 1 and summing.
+      // 2) If empty, return (Nil, 0).
+      // 3) Otherwise find the maximum count and collect all countries that reach it (ties),
+      //    sort them for determinism, and return them along with the max count.
       val counts = data.groupMapReduce(_.destinationCountry)(_ => 1)(_ + _)
       if counts.isEmpty then (Nil, 0)
       else
-        // Find the maximum count and collect all countries that reach it
         val maxCount = counts.values.max
         val top = counts.collect { case (k, v) if v == maxCount => k }.toList.sorted
         (top, maxCount)
@@ -186,25 +206,28 @@ object MyApp extends JFXApp3:
           val eps = 1e-12
           scored.filter { case (_, s) => math.abs(s - topScore) < eps }.map(_._1)
 
-    // Q3: returns list of most profitable hotel name(s)
+    // Q3: returns list of most profitable hotel name(s) (ties allowed)
     def answerQ3(): List[String] =
-      if metrics.isEmpty then Nil
+      // Compute the most-profitable hotel(s) using the lecturer-style composite of visitor totals and avg profit.
+      // Steps:
+      // 1) Use `metrics` (already derived from `aggs`) to get per-hotel total visitors and avg profit margin.
+      // 2) Min-max normalize visitor totals and avg profits independently into [0,1].
+      // 3) For each hotel compute the average of the normalized visitor score and normalized profit score.
+      // 4) Sort by this composite score (desc) and return the top hotel name(s). Ties are handled with a small epsilon.
+      if metrics.isEmpty@@ then Nil
       else
-        // metrics contains per-hotel totals (per-hotel total visitors and avg profit margin).
+        // metrics contains per-hotel totals (avg price-per-booking, avg discount, avg profit).
         val visitorTotals = metrics.view.mapValues(_._4).toMap
         val avgProfits = metrics.view.mapValues(_._3).toMap
+
         val vList = visitorTotals.values.toList
         val pList = avgProfits.values.toList
-
-        // Min-max normalize visitor totals and avg profits independently into [0,1]
         val minV = vList.min; val maxV = vList.max
         val minP = pList.min; val maxP = pList.max
 
-        // Get score for each criteria
         def vScore(v: Int): Double = if maxV == minV then 1.0 else (v - minV).toDouble / (maxV - minV)
         def pScore(p: Double): Double = if maxP == minP then 1.0 else (p - minP) / (maxP - minP)
 
-        // Compute the average of the normalized visitor score and normalized profit score
         val scored = visitorTotals.keys.iterator.map { k =>
           val v = visitorTotals(k)
           val p = avgProfits(k)
@@ -212,7 +235,6 @@ object MyApp extends JFXApp3:
           (s"${k.name}, ${k.city}, ${k.country}", score)
         }.toList.sortBy(-_._2)
 
-        // Sort by score, return top hotel, deal with ties
         if scored.isEmpty then Nil
         else
           val topScore = scored.head._2
@@ -253,3 +275,10 @@ object MyApp extends JFXApp3:
 
 
 end MyApp
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: `<none>`.

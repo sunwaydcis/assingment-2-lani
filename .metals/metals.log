@@ -1,0 +1,21 @@
+2025.12.06 13:53:56 INFO  Started: Metals version 1.6.4 in folders 'C:\02 PROJECTS\assingment-2-lani' for client Visual Studio Code 1.106.3.
+2025.12.06 13:53:57 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.12.06 13:53:57 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Dec 06, 2025 1:54:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2025.12.06 13:54:00 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 13:54:00 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Dec 06, 2025 1:54:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+Dec 06, 2025 1:54:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+Dec 06, 2025 1:54:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2025.12.06 13:54:01 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 13:54:01 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 13:54:01 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 13:54:07 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 13:54:07 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 13:54:07 WARN  no build target for: C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala
+2025.12.06 13:54:07 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.12.06 13:54:18 INFO  no build target found for C:\02 PROJECTS\assingment-2-lani\src\main\scala\myfirstscala.scala. Using presentation compiler with project's scala-library version: 3.3.6

@@ -1,3 +1,19 @@
+error id: file:///C:/02%20PROJECTS/assingment-2-lani/src/main/scala/myfirstscala.scala:scala/Int#toDouble().
+file:///C:/02%20PROJECTS/assingment-2-lani/src/main/scala/myfirstscala.scala
+empty definition using pc, found symbol in pc: scala/Int#toDouble().
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+	 -agg/bookings/toDouble.
+	 -agg/bookings/toDouble#
+	 -agg/bookings/toDouble().
+	 -scala/Predef.agg.bookings.toDouble.
+	 -scala/Predef.agg.bookings.toDouble#
+	 -scala/Predef.agg.bookings.toDouble().
+offset: 4921
+uri: file:///C:/02%20PROJECTS/assingment-2-lani/src/main/scala/myfirstscala.scala
+text:
+```scala
 import scalafx.application.JFXApp3
 
 import scala.io.Source
@@ -116,7 +132,7 @@ object MyApp extends JFXApp3:
       sumPricePerBookingPerson + o.sumPricePerBookingPerson
     )
 
-  // CORE: Q1, Q2, and Q3 calculations, as well as some shared calculations for faster computation
+  // Helper Function: Get core calculations shared across questions
   class HotelAnalytics(data: List[Booking]):
 
     // Map HotelAgg to HotelKey (Find totals for each hotel group)
@@ -138,7 +154,7 @@ object MyApp extends JFXApp3:
     private lazy val metrics: Map[HotelKey, (Double, Double, Double, Int)] =
       aggs.view.mapValues { agg =>
         val avgPricePerPerson = if agg.bookings == 0 then 0.0 else agg.sumPricePerBookingPerson / agg.bookings.toDouble
-        val avgDiscount = if agg.bookings == 0 then 0.0 else agg.totalDiscount / agg.bookings.toDouble
+        val avgDiscount = if agg.bookings == 0 then 0.0 else agg.totalDiscount / agg.bookings.toDo@@uble
         val avgProfit = if agg.bookings == 0 then 0.0 else agg.totalProfit / agg.bookings.toDouble
         val totalPeople = agg.totalPeople
         (avgPricePerPerson, avgDiscount, avgProfit, totalPeople)
@@ -253,3 +269,10 @@ object MyApp extends JFXApp3:
 
 
 end MyApp
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: scala/Int#toDouble().
