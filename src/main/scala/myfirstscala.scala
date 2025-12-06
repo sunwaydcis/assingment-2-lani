@@ -48,9 +48,24 @@ object MyApp extends JFXApp3:
 
     val lines = Source.fromInputStream(stream, "ISO-8859-1").getLines().toList // Use a permissive single-byte encoding to avoid charset errors from the CSV file
 
+    if lines.isEmpty then
+      println(s"ERROR: Empty file $file")
+      return Nil
+
+    // Parse header to get column names
+    val headerOpt = parseCSVLine(lines.head)
+    if headerOpt.isEmpty then
+      println(s"ERROR: Could not parse header")
+      return Nil
+
+    val headers = headerOpt.get
+    val headerMap = headers.zipWithIndex.toMap // Map[String, Int] from header name to index
+
+    // Process data rows
     lines
-      .drop(1)             // remove header
+      .drop(1)             // skip header
       .flatMap(parseCSVLine)
+      .map(cols => createRowMap(headers, cols)) // Convert array to Map[String, String]
       .flatMap(convertToBooking)
 
   // Parse CSV
@@ -85,26 +100,42 @@ object MyApp extends JFXApp3:
 
     Some(buffer.toArray)
 
-  // Convert CSV to Bookings data structure
-  def convertToBooking(cols: Array[String]): Option[Booking] =
-    if cols.length < 24 then
-      println(s"Skipping row (invalid column count): ${cols.mkString("|")}")
-      return None
+  // Helper: Create a Map from header names to row values
+  def createRowMap(headers: Array[String], cols: Array[String]): Map[String, String] =
+    headers.zip(cols).toMap
+
+  // Convert CSV to Bookings data structure using header-based access
+  def convertToBooking(rowMap: Map[String, String]): Option[Booking] =
+    def get(key: String): String = rowMap.getOrElse(key, "")
+    def getInt(key: String): Int = get(key).toInt
+    def getDouble(key: String): Double = get(key).toDouble
 
     Try {
       Booking(
-        cols(0), cols(1), cols(2), cols(3), cols(4),
-        cols(5).toInt,
-        cols(6), cols(7), cols(8),
-        cols(9), cols(10),
-        cols(11).toInt,
-        cols(12), cols(13).toInt, cols(14),
-        cols(15).toInt,
-        cols(16), cols(17).toDouble, cols(18), cols(19),
-        cols(20).toDouble,
-        cols(21).replace("%", "").toDouble,
-        cols(22).toDouble,
-        cols(23).toDouble
+        get("Booking ID"),
+        get("Date of Booking"),
+        get("Time"),
+        get("Customer ID"),
+        get("Gender"),
+        getInt("Age"),
+        get("Origin Country"),
+        get("State"),
+        get("Location"),
+        get("Destination Country"),
+        get("Destination City"),
+        getInt("No. Of People"),
+        get("Check-in date"),
+        getInt("No of Days"),
+        get("Check-Out Date"),
+        getInt("Rooms"),
+        get("Hotel Name"),
+        getDouble("Hotel Rating"),
+        get("Payment Mode"),
+        get("Bank Name"),
+        getDouble("Booking Price[SGD]"),
+        get("Discount").replace("%", "").toDouble,
+        getDouble("GST"),
+        getDouble("Profit Margin")
       )
     }.toOption
 
